@@ -273,40 +273,40 @@
   <div id="app" class="relative" :aria-hidden="!ageVerified">
     <!-- Age Gate Overlay -->
     <transition name="fade">
-      <div
-        v-if="!ageVerified"
-        id="age-gate"
-        role="dialog"
-        aria-modal="true"
-        aria-labelledby="age-gate-title"
-        aria-describedby="age-gate-desc"
-        tabindex="0"
-      >
-        <div class="max-w-md bg-slate-900 rounded-3xl p-10 text-center shadow-neon-blue border border-accent/40">
-          <h2 id="age-gate-title" class="text-4xl font-oxanium font-extrabold mb-6 text-accent select-none">
-            Verificación de Edad
-          </h2>
-          <p id="age-gate-desc" class="text-lg text-slate-300 mb-8 select-none leading-relaxed">
-            Debe tener al menos 21 años para ingresar a este sitio web. Por favor, confirme su edad.
-          </p>
-          <div class="flex flex-col sm:flex-row justify-center gap-6">
-            <button
-              @click="verifyAge(true)"
-              class="bg-cyanglow hover:bg-accent text-deepblue font-extrabold px-8 py-4 rounded-3xl text-xl shadow-neon-blue transition transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-cyanglow focus:ring-opacity-60"
-              aria-label="Confirmo que tengo 21 años o más"
-            >
-              Soy mayor 
-            </button>
-            <button
-              @click="verifyAge(false)"
-              class="bg-red-600 hover:bg-red-700 text-white font-extrabold px-8 py-4 rounded-3xl text-xl shadow-neon-red transition transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-red-600 focus:ring-opacity-60"
-              aria-label="No tengo 21 años, salir del sitio"
-            >
-              No soy mayor 
-            </button>
+        <div
+          v-if="!ageVerified"
+          id="age-gate"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="age-gate-title"
+          aria-describedby="age-gate-desc"
+          tabindex="0"
+        >
+          <div class="max-w-md bg-slate-900 rounded-3xl p-10 text-center shadow-neon-blue border border-accent/40">
+            <h2 id="age-gate-title" class="text-4xl font-oxanium font-extrabold mb-6 text-accent select-none">
+              Verificación de Edad
+            </h2>
+            <p id="age-gate-desc" class="text-lg text-slate-300 mb-8 select-none leading-relaxed">
+              Debe tener al menos 21 años para ingresar a este sitio web. Por favor, confirme su edad.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-6">
+              <button
+                @click="verifyAge(true)"
+                class="bg-cyanglow hover:bg-accent text-deepblue font-extrabold px-8 py-4 rounded-3xl text-xl shadow-neon-blue transition transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-cyanglow focus:ring-opacity-60"
+                aria-label="Confirmo que tengo 21 años o más"
+              >
+                Soy mayor
+              </button>
+              <button
+                @click="verifyAge(false)"
+                class="bg-red-600 hover:bg-red-700 text-white font-extrabold px-8 py-4 rounded-3xl text-xl shadow-neon-red transition transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-red-600 focus:ring-opacity-60"
+                aria-label="No tengo 21 años, salir del sitio"
+              >
+                No soy mayor
+              </button>
+            </div>
           </div>
         </div>
-      </div>
     </transition>
 
     <!-- Main content -->
