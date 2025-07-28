@@ -1277,6 +1277,46 @@
                   </button>
                 </div>
               </div>
+
+              <div
+                class="relative catalog-item glass-effect rounded-3xl overflow-hidden border border-accent/30 hover:border-accent/60 focus-within:ring-4 focus-within:ring-accent focus-within:ring-opacity-60 shadow-neon-blue"
+                tabindex="0"
+                aria-label="Variedad Orangina Razpado"
+              >
+                <div class="relative h-72 rounded-3xl overflow-hidden shadow-lg">
+                  <img
+                    src="https://cdn.seedfinder.eu/pics/01seeds/The_Grateful_Seeds/The_Grateful_Seeds_-_Orangina.jpg"
+                    alt="Orangina Razpado - variedad con galletita de manteca de naranja y crema"
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <div
+                    class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent py-5 px-8 rounded-b-3xl"
+                  >
+                    <div class="text-2xl font-extrabold text-white drop-shadow-neon-blue select-none">ORANGINA RAZPADO</div>
+                  </div>
+                </div>
+                <div class="p-8 space-y-6">
+                  <div class="flex justify-between items-center text-lg font-semibold text-accent select-none">
+                    <span>Shuga Seeds</span>
+                    <div class="flex items-center" aria-label="Calificación 4.8 estrellas">
+                      <i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star"></i>
+                      <span class="ml-2 text-white font-bold">4.8</span>
+                    </div>
+                  </div>
+                  <p class="text-slate-300 text-base leading-relaxed select-none">
+                    Galletita de manteca de naranja con crema y notas de azúcar-vainilla; final cítrico persistente que recuerda a refresco de naranja.
+                  </p>
+                  <button
+                    @click.prevent="openModal('ORANGINA RAZPADO')"
+                    class="w-full bg-gradient-to-r from-cyanglow to-accent text-deepblue px-6 py-3 rounded-3xl font-extrabold text-lg shadow-neon-blue hover:brightness-110 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-cyanglow focus:ring-opacity-60"
+                    aria-label="Ver detalles de Orangina Razpado"
+                  >
+                    Ver detalles
+                  </button>
+                </div>
+              </div>
             </div>
 
             <div
@@ -1865,6 +1905,19 @@
             genetics: 'Grape Ape × Grapefruit — Índica dominante (70 %)',
             flowering: 'Indoor: 55-65 días · Outdoor: cosecha mediados de octubre',
             yield: 'Medio-alto; desarrolla flores compactas, extremadamente resinosas y con terpenos de perfil analgésico y antiinflamatorio destacado',
+          },
+          'ORANGINA RAZPADO': {
+            image:
+              'https://cdn.seedfinder.eu/pics/01seeds/The_Grateful_Seeds/The_Grateful_Seeds_-_Orangina.jpg',
+            potencia: '<i class="fas fa-fire text-red-500 text-xl" aria-hidden="true"></i><i class="fas fa-fire text-red-500 text-xl" aria-hidden="true"></i><i class="fas fa-fire text-red-500 text-xl" aria-hidden="true"></i>',
+            rating: '4.8',
+            flavor:
+              'Galletita de manteca de naranja con crema y notas de azúcar-vainilla; final cítrico persistente que recuerda a refresco de naranja.',
+            effects:
+              'Híbrido equilibrado: combina euforia creativa y ánimo elevado con relajación suave, ideal para uso social o creativo sin pesadez.',
+            genetics: 'Ice Cream Cake × OCD Miracle #15 — predominancia Índica 60 % / Sativa 40 %.',
+            flowering: 'Indoor: 53-63 días.',
+            yield: 'Producción media-alta; cogollos densos y aromáticos',
           },
         };
 
