@@ -1237,6 +1237,46 @@
                   </button>
                 </div>
               </div>
+
+              <div
+                class="relative catalog-item glass-effect rounded-3xl overflow-hidden border border-accent/30 hover:border-accent/60 focus-within:ring-4 focus-within:ring-accent focus-within:ring-opacity-60 shadow-neon-blue"
+                tabindex="0"
+                aria-label="Variedad Lemon Thai Kush"
+              >
+                <div class="relative h-72 rounded-3xl overflow-hidden shadow-lg">
+                  <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7Y2LoFMu4ZyZH2oZePpcWnAs_-B2yodWgGg&s"
+                    alt="Lemon Thai Kush - variedad con cítricos brillantes, limón y flores frescas"
+                    class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                  <div
+                    class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 to-transparent py-5 px-8 rounded-b-3xl"
+                  >
+                    <div class="text-2xl font-extrabold text-white drop-shadow-neon-blue select-none">LEMON THAI KUSH</div>
+                  </div>
+                </div>
+                <div class="p-8 space-y-6">
+                  <div class="flex justify-between items-center text-lg font-semibold text-accent select-none">
+                    <span>Humboldt Seed</span>
+                    <div class="flex items-center" aria-label="Calificación 3.7 estrellas">
+                      <i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star mr-1"></i><i class="fas fa-star-half-alt"></i>
+                      <span class="ml-2 text-white font-bold">3.7</span>
+                    </div>
+                  </div>
+                  <p class="text-slate-300 text-base leading-relaxed select-none">
+                    Cítricos brillantes —limón y flores frescas— con notas de cedro; en la exhalación aparecen pino, pimienta y un fondo leñoso.
+                  </p>
+                  <button
+                    @click.prevent="openModal('LEMON THAI KUSH')"
+                    class="w-full bg-gradient-to-r from-cyanglow to-accent text-deepblue px-6 py-3 rounded-3xl font-extrabold text-lg shadow-neon-blue hover:brightness-110 transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-cyanglow focus:ring-opacity-60"
+                    aria-label="Ver detalles de Lemon Thai Kush"
+                  >
+                    Ver detalles
+                  </button>
+                </div>
+              </div>
             </div>
 
             <div
@@ -1799,6 +1839,19 @@
             genetics: 'Gelato 41 × Sunset Sherbert BX1 — Índica 60 % / Sativa 40 %',
             flowering: 'Indoor: 60-70 días · Outdoor: cosecha inicios-mediados de octubre',
             yield: 'Alto; forma cogollos densos y muy resinosos',
+          },
+          'LEMON THAI KUSH': {
+            image:
+              'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7Y2LoFMu4ZyZH2oZePpcWnAs_-B2yodWgGg&s',
+            potencia: '<i class="fas fa-fire text-red-500 text-xl" aria-hidden="true"></i><i class="fas fa-fire text-red-500 text-xl" aria-hidden="true"></i>',
+            rating: '3.7',
+            flavor:
+              'Cítricos brillantes —limón y flores frescas— con notas de cedro; en la exhalación aparecen pino, pimienta y un fondo leñoso.',
+            effects:
+              'Subidón rápido, claro y energético que estimula la creatividad; prolongado "buzz" cerebral con relajación corporal moderada. Ideal para tareas diurnas, ocio activo y control del estrés.',
+            genetics: 'Haze × White Widow · Sativa 60 % / Índica 40 %',
+            flowering: 'Indoor: 60-65 días · Outdoor: cosecha inicios de octubre',
+            yield: 'Producción media-alta; cogollos densos y aromáticos',
           },
           'LEMON Z': {
             image:
