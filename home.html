@@ -270,7 +270,7 @@
   </style>
 </head>
 <body class="bg-[url('https://pipphorticulture.com/wp-content/uploads/elementor/thumbs/Pipp-Storage-70-small2-r12fe3zuka48szbft90wbnht33jeiwi18digf92mi8.jpg')] bg-cover bg-center bg-fixed bg-no-repeat bg-opacity-50 bg-blend-darken text-white font-montserrat selection:bg-accent selection:text-deepblue">
-  <div id="app" class="relative" :aria-hidden="!ageVerified">
+    <div id="app" class="relative" :aria-hidden="!ageVerified">
     <!-- Age Gate Overlay -->
     <transition name="fade">
         <div
@@ -294,6 +294,7 @@
                 @click="verifyAge(true)"
                 class="bg-cyanglow hover:bg-accent text-deepblue font-extrabold px-8 py-4 rounded-3xl text-xl shadow-neon-blue transition transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-cyanglow focus:ring-opacity-60"
                 aria-label="Confirmo que tengo 21 años o más"
+                type="button"
               >
                 Soy mayor
               </button>
@@ -301,6 +302,7 @@
                 @click="verifyAge(false)"
                 class="bg-red-600 hover:bg-red-700 text-white font-extrabold px-8 py-4 rounded-3xl text-xl shadow-neon-red transition transform hover:scale-105 focus:outline-none focus:ring-4 focus:ring-red-600 focus:ring-opacity-60"
                 aria-label="No tengo 21 años, salir del sitio"
+                type="button"
               >
                 No soy mayor
               </button>
@@ -1726,8 +1728,6 @@
         const ageVerified = ref(false);
 
         const strainDetails = {
-      
-         
           'MIMOSA': {
             image:
               './mimosa.png',
